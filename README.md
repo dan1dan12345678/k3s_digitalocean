@@ -1,1 +1,1 @@
-# tf-k8s-digitalocean
+# k3s-digitalocean

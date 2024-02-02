@@ -17,7 +17,7 @@ resource "digitalocean_kubernetes_cluster" "terraformk3s" {
 
   node_pool {
     name = "worker-node-pool"
-    size = "s-1vcpu-1gb"
+    size = "s-2vcpu-2gb"
     auto_scale = true
     min_nodes = 3
     max_nodes = 4

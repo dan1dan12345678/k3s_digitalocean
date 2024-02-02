@@ -10,16 +10,16 @@ provider "digitalocean" {
   token = var.do_token
 }
 
-resource "digitalocean_kubernetes_cluster" "terraformk8s" {
+resource "digitalocean_kubernetes_cluster" "terraformk3s" {
   name = var.cluster_name
   region = var.region
   version = var.k8s_version
 
   node_pool {
     name = "worker-node-pool"
-    size = "s-2vcpu-2gb"
+    size = "s-1vcpu-1gb"
     auto_scale = true
-    min_nodes = 2
-    max_nodes = 3
+    min_nodes = 3
+    max_nodes = 4
   }
 }

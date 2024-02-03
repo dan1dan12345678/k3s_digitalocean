@@ -15,4 +15,4 @@ preferences: {}
 users:
 - name: do-fra1-terraformk3s-admin
   user:
-    token: dop_v1_90b93e883d542082fc1d2054a17073531ce288b61a7a4ae1fa546096ced17559
+    token: 

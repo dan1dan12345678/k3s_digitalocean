@@ -4,7 +4,29 @@ k3s-digitalocean deployment of 3 k3s nodes
 
 DO token need to added to main .tf
 
+
+
+How to`s
+ 
+  . export KUBECONFIG=./kubeconfig-terraformk3s
+
+  . check if nodes are created
+
+    kubectl get no
+
+
 Deploy ArgoCD as POC
 
-export KUBECONFIG=./kubeconfig-terraformk3s
-kubectl get no
+ . get ArgoCD first run password
+
+   kubectl get secrets argocd-initial-admin-secret -n default -o jsonpath="{.data.password}" | base64 --decode
+
+ . get IP address of loadbalancer
+
+   kubectl get svc -n default
+
+  . log in as Admin to ArgoCD
+   
+
+
+

@@ -46,7 +46,7 @@ output "cluster_version" {
 
 output "kubeconfig" {
   value     = digitalocean_kubernetes_cluster.terraformk3s.kube_config[0].raw_config
-  sensitive = false
+  sensitive = true
 }
 
 #added

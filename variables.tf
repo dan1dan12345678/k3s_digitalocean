@@ -1,6 +1,6 @@
 variable "do_token" {
   type      = string
-  default   = "dop_v1_eb3ade305e200148e797371d7b1c9a29ac845fea834b0b017094afc319180899"
+  default   = "dop_v1_430494d26ae9afe0f028bc3e3738a95b0f71108966e67f82e80555ad82ce33b0"
   sensitive = true
 }
 

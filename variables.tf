@@ -1,10 +1,7 @@
 variable "do_token" {
   type      = string
-<<<<<<< HEAD
   default   = ""
-=======
   default   = ""
->>>>>>> cae5a98bbefe21a182c661c3d4f6208559697ff1
   sensitive = true
 }
 
